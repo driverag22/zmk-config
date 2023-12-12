@@ -28,27 +28,27 @@
                 lower_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |      |
-// | SHFT |     |     | F1  | F5  | F11 |   | LFT | DWN |  UP | RGT |     |  DEL |
-// | CTRL |BTCLR| BT1 | BT2 |     |     |   | MUTE|VDOWN| VUP |BDOWN| BUP |   "  |
+// | SHFT |     |     |  {  |  [  |  (  |   |  )  |  ]  |  }  |     |  \  | BKSP |
+// | CTRL | "|" |  =  |  +  |  -  |  _  |   |     |     |     |     |     |  `   |
 //                    | GUI |     | ENT |   | SPC |     | ALT |
                         bindings = <
    &trans &kp N1       &kp N2       &kp N3     &kp N4   &kp N5   &kp N6      &kp N7       &kp N8       &kp N9       &kp N0       &trans
-   &trans &trans       &trans       &kp F1     &kp F5   &kp F11  &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT    &trans       &kp DEL
-   &trans &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1  &trans   &trans   &kp K_MUTE  &kp K_VOL_DN &kp K_VOL_UP &kp C_BRI_DN &kp C_BRI_UP &kp DQT
+   &trans &trans  &trans &kp LBRC &kp LBKT &kp LPAR    &kp RPAR  &kp RBKT  &kp RBRC &trans &kp BSLH &trans
+   &trans &kp PIPE &kp EQUAL &kp PLUS &kp MINUS &kp UNDER &trans &trans &trans &kp QMARK &trans &kp GRAVE
                              &trans &trans &trans &trans &trans &trans
                         >;
                 };
 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |     |     | DQT |
-// | SHFT |     |     |  {  |  [  |  (  |   |  )  |  ]  |  }  |     |     | BKSP|
-// | CTRL | "|" |  =  |  +  |  -  |  _  |   |     |     |     |     |  \  |  `  |
+// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |     |     |      |
+// | SHFT |     |     | F1  | F5  | F11 |   | LFT | DWN |  UP | RGT |     |  DEL |
+// | CTRL |BTCLR| BT1 | BT2 |     |     |   | MUTE|VDOWN| VUP |BDOWN| BUP |   "  |
 //                    | GUI |     | ENT |   | SPC |     | ALT | 
                         bindings = <
-   &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &trans &trans &kp DQT
-   &trans &trans  &trans &kp LBRC &kp LBKT &kp LPAR    &kp RPAR  &kp RBKT  &kp RBRC &trans &trans &trans
-   &trans &kp PIPE &kp EQUAL &kp PLUS &kp MINUS &kp UNDER &trans &trans &trans &kp QMARK &kp BSLH &kp GRAVE
+   &trans &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &trans &trans &trans
+   &trans &trans       &trans       &kp F1     &kp F5   &kp F11  &kp LEFT    &kp DOWN     &kp UP       &kp RIGHT    &trans       &kp DEL
+   &trans &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &trans &trans   &kp K_MUTE  &kp K_VOL_DN &kp K_VOL_UP &kp C_BRI_DN &kp C_BRI_UP &kp DQT
                              &trans &trans &trans &trans &trans &trans
                         >;
                 };
