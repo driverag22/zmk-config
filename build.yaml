@@ -17,5 +17,5 @@ include:
   #   shield: corne_left
   # - board: nice_nano_v2
   #   shield: corne_right
-  - board: pillbug 
+  - board: blackpill_f411ce 
     shield: reviung41
